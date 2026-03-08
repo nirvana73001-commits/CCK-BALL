@@ -12,7 +12,7 @@ manifest:
       path: zmk
 
     - name: zmk-pmw3610-driver
-      remote: nirvana73001-commits   # ← あなたの public fork にする
+      remote: kohei   # ← あなたの public fork にする
       revision: main
 
   self:
