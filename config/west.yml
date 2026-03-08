@@ -2,16 +2,17 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: DoctorWangWang
+    - name: wang-public
       url-base: https://github.com/DoctorWangWang
 
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.1
+      revision: v0.3.0
+      path: zmk
 
-    - name: zmk-pmw3610-drive
-      remote: DoctorWangWang
+    - name: zmk-pmw3610-driver
+      remote: wang-public
       revision: main
 
   self:
