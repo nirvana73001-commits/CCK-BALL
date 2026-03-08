@@ -2,4 +2,10 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          path: CCK-BALL
+
+      - uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
